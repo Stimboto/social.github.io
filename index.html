@@ -26,6 +26,26 @@
         </div>
       </div>
     </nav>
+
+ <!-- cookies section-->
+ <body>
+  <div class="bg-gray-800 text-white p-4 flex justify-between">
+    <p class="text-sm">We use cookies to improve your experience on our site. By using our site, you agree to our use of cookies. </p>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600" id="accept-cookies">Accept</button>
+  </div>
+
+  <script>
+    const acceptCookiesButton = document.getElementById('accept-cookies');
+    const cookiesBanner = acceptCookiesButton.parentNode;
+
+    acceptCookiesButton.addEventListener('click', () => {
+      cookiesBanner.remove();
+    });
+  </script>
+</body>
+
+
+     <!-- welcome section-->
     <main class="px-4 py-8 pt-40">
       <div class="flex items-center justify-center">
         <img src="https://picsum.photos/200/200" alt="profile picture" class="w-32 h-32 rounded-full">
