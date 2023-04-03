@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.1.2/dist/tailwind.min.css" />
   </head>
  <div class="bg-white min-h-screen">
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg h-40  pt-4">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg h-20  pt-3">
       <div class="flex items-center justify-between">
 
        <!-- whatspp connect-->
@@ -28,7 +28,7 @@
     </nav>
 
      <!-- welcome section-->
-    <main class="px-4 py-15 pt-40">
+    <main class="px-4 py-8 pt-40">
        <!-- cookies section-->
  <body>
   <div class="bg-gray-800 text-white p-4 flex justify-between">
@@ -101,6 +101,19 @@
      </div>
      </div>
    </main>
+   <!-- HTML code for the advertisement poster -->
+
+<div class="relative">
+  <img src="https://i.pinimg.com/474x/5c/7f/6a/5c7f6ad14aff38c720c5c6bc913322eb.jpg" alt="Advertisement Poster" class="w-full h-auto">
+  <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl" onclick="removeAd()">X</button>
+</div>
+
+<script>
+function removeAd() {
+  var adContainer = document.querySelector('.relative');
+  adContainer.remove();
+}
+</script>
 
    <!-- feature section-->
    <div class="bg-gray-100 min-h-screen">
