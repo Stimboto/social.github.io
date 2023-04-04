@@ -6,30 +6,47 @@
     <!-- Import Tailwind CSS -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.1.2/dist/tailwind.min.css" />
   </head>
-<div class="flex justify-center items-center bg-red-100 h-screen">
-    <div class="max-w-lg w-full rounded-lg shadow-lg p-8 bg-white">
-      <h2 class="text-2xl font-bold mb-4">SOCIAL</h2>
-      <form class="mb-4">
-        <div class="mb-4">
-          <label class="block text-gray-700 font-bold mb-2" for="username">
-            Username
-          </label>
-          <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter your username">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 font-bold mb-2" for="password">
-            Password
-          </label>
-          <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter your password">
-        </div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-          <a href="index.html" class="text-white-500 mt-2 hover:underline">log in</a>
-        </button>
+<!--floating section-->
+
+
+<div class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50" id="login-modal">
+  <div class="bg-white rounded-lg p-8">
+     <div class="flex items-center">
+      <img src="https://i.pinimg.com/474x/95/f0/5d/95f05dad8ce20d17e4bcdb359633ca3a.jpg" alt="Logo" class="h-8 w-8 mr-4">
+      <h1 class="text-2xl text-orange-700 border rounded-lg  font-bold"> WELCOME TO SOCIAL</h1>
+    </div>
+    <h2 class="text-2xl font-bold mb-4 mt-3   ">LOGIN</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="username">
+          Username
+        </label>
+        <input class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" id="username" type="text" placeholder="Username">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="password">
+          Password
+        </label>
+        <input class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" id="password" type="password" placeholder="Password">
+      </div>
+      <div class="flex justify-end">
+    <button type="button" id="sign-in-button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Sign In</button>
       </form>
-      <div class="text-gray-700 text-center">
+      <div class="text-gray-700 text-center  px-4 py-2">
         Don't have an account? 
         <a class="font-bold hover:text-gray-900" href="#"><a href="page4.html" class="text-blue-500 mt-2 hover:underline">Sign up</a></a>
       </div>
-    </div>
+      </div>
+    </form>
   </div>
+</div>
+<script>
+  const modal = document.getElementById('login-modal');
+  const signInButton = document.getElementById('sign-in-button');
+
+  signInButton.addEventListener('click', () => {
+    modal.remove();
+  });
+</script>
+
 </html>  
