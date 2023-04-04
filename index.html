@@ -313,74 +313,9 @@ function removeAd() {
       <nav class="bg-gray-200 px-4 py-3 shadow-md">
       <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase  ">Quote of the day</h2>
       </nav>
-      <!-- motivational  section -->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Typewriter Effect</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css" integrity="sha512-HiO8CvAm/ZJbLHnEJKhccgM1s/BsKsXfsi2TuyTlmT+T/b+bSyPnFzrnEsyEwLbWQxRwy1frX9X01iGYEWf3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      #typewriter {
-        animation: blink-caret 0.75s step-end infinite;
-      }
-
-      @keyframes blink-caret {
-        from, to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: black;
-        }
-      }
-    </style>
-  </head>
-  <body class="py-16">
-    <div class="container mx-auto">
-      <h1 id="typewriter" class="text-3xl text-indigo-600 font-bold"></h1>
-    </div>
-
-    <script>
-      let count = 0;
-
-function typewriter() {
-  const text = "Believe you can and you're halfway there!";
-  let index = 0;
-  const typewriter = document.querySelector('#typewriter');
-
-  function type() {
-    typewriter.textContent += text[index];
-    index++;
-    if(index === text.length) {
-      clearInterval(interval);
-      setTimeout(erase, 1000);
-    }
-  }
-
-  function erase() {
-    const interval = setInterval(() => {
-      if(typewriter.textContent.length === 0) {
-        clearInterval(interval);
-        count++;
-        if(count < 0) {
-          setTimeout(type, 1000);
-        }
-      } else {
-        typewriter.textContent = typewriter.textContent.slice(0, -1);
-      }
-    }, 50);
-  }
-
-  const interval = setInterval(type, 100);
-}
-
-typewriter();
-setInterval(typewriter, 4000);
-
-
-
-    </script>
-  </body>
-</html>
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+        <span class="block text-indigo-600 xl:inline  animate-pulse">"Believe you can and you're halfway there."</span>
+      </p>
     </div>
     <div class="mt-10">
       <div class="max-w-4xl mx-auto">
