@@ -11,6 +11,49 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg h-20  pt-3">
       <div class="flex items-center justify-between">
 
+
+
+        <!--floating section-->
+
+
+<div class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50" id="login-modal">
+  <div class="bg-white rounded-lg p-8">
+     <div class="flex items-center">
+      <img src="https://i.pinimg.com/474x/95/f0/5d/95f05dad8ce20d17e4bcdb359633ca3a.jpg" alt="Logo" class="h-8 w-8 mr-4">
+      <h1 class="text-2xl text-orange-700 border rounded-lg  font-bold"> WELCOME TO SOCIAL</h1>
+    </div>
+    <h2 class="text-2xl font-bold mb-4 mt-3   ">LOGIN</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="username">
+          Username
+        </label>
+        <input class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" id="username" type="text" placeholder="Username">
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2" for="password">
+          Password
+        </label>
+        <input class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" id="password" type="password" placeholder="Password">
+      </div>
+      <div class="flex justify-end">
+    <button type="button" id="sign-in-button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Sign In</button>
+    </form>
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+  const modal = document.getElementById('login-modal');
+  const signInButton = document.getElementById('sign-in-button');
+
+  signInButton.addEventListener('click', () => {
+    modal.remove();
+  });
+</script>
+
+
+
 <!--<head><meta charset="utf-8" /><meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" /><script nonce="0fBCHuLV">function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"useTrustedTypes":false,"isTrustedTypesReportOnly":false,"ajaxpipe_token":"AXhvgyp7gORocSBGcI4","gk_instrument_object_url":true,"stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ6Ab-VaLZw0NH7ZcSQ","isCQuick":false});</script><script nonce="0fBCHuLV">(function(a){function b(b){if(!window.openDatabase)return;b.I_AM_INCOGNITO_AND_I_REALLY_NEED_WEBSQL=function(a,b,c,d){return window.openDatabase(a,b,c,d)};window.openDatabase=function(){throw new Error()}}b(a)})(this);</script><style nonce="0fBCHuLV"></style><script nonce="0fBCHuLV">__DEV__=0;</script><noscript><meta http-equiv="refresh" content="0; URL=/pages/create/?ref_type=registration_form&amp;_fb_noscript=1" /></noscript><link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/" crossorigin="use-credentials" /><title id="pageTitle">Facebook</title><link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico" /><link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/drHFafs6sDh.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="fm+Wpcb" crossorigin="anonymous" />
 <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yE/l/0,cross/RspwE1UYLwr.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="Pud6B2Z" crossorigin="anonymous" />
 <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/Y1DM6LKnz1X.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="p5/JyPm" crossorigin="anonymous" />
@@ -224,7 +267,7 @@
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md">
-            <img src="https://i.pinimg.com/474x/a7/47/8d/a7478d28a0794882ad256d4b795c64b3.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
+            <img src="https://i.pinimg.com/474x/4b/5b/8b/4b5b8b2cc2679a11a7661918c0ee1119.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
             <div class="p-4">
               <h3 class="text-xl font-bold mb-2">TIME TRAVEL</h3>
               <p class="text-gray-500">Time travel is a concept that has fascinated humanity for generations, capturing our imaginations with the idea of exploring the past or the future. It's the ultimate journey into the unknown, a thrilling adventure that takes us beyond the boundaries of our current reality. From the ancient myths of time travel to the modern science fiction stories that transport us to distant worlds, time travel has inspired us to dream of what could be, to explore the infinite possibilities of the universe. So why not step into the world of time travel, and experience the wonders that await you?</p>
@@ -232,7 +275,7 @@
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md">
-            <img src="https://i.pinimg.com/474x/a0/8e/3b/a08e3b87ef9fc3a47af7602028adc1fd.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
+            <img src="https://i.pinimg.com/474x/85/28/f3/8528f313e2246b05909f06707e4f0aae.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
             <div class="p-4">
               <h3 class="text-xl font-bold mb-2">SPACE-X</h3>
               <p class="text-gray-500">SpaceX is a pioneering company that is redefining space travel as we know it. With their cutting-edge technology and innovative approach, they are pushing the boundaries of what's possible and paving the way for a new era of space exploration. Their mission to make space accessible to everyone has captured the imagination of people all over the world, and their groundbreaking achievements have inspired a new generation of space enthusiasts. From launching reusable rockets to sending humans to space, SpaceX is on a mission to revolutionize the way we explore the cosmos and create a better future for all of us.</p>
@@ -245,7 +288,7 @@
    <!-- HTML code for the advertisement poster -->
 
 <div class="relative">
-  <img src="https://i.pinimg.com/474x/aa/0d/15/aa0d150da729b48721cdfeb71c95d3cc.jpg" alt="Advertisement Poster" class="w-full h-auto">
+  <img src="https://i.pinimg.com/474x/12/16/9d/12169d9427f2583279c0ffc45f3f9ac4.jpg" alt="Advertisement Poster" class="w-full h-auto">
   <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl" onclick="removeAd()">Remove Ad</button>
 </div>
 
