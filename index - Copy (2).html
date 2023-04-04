@@ -11,55 +11,7 @@
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg h-20  pt-3">
       <div class="flex items-center justify-between">
 
-
-
-        <!--floating section-->
-
-
-<div class="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50" id="login-modal">
-  <div class="bg-white rounded-lg p-8">
-     <div class="flex items-center">
-      <img src="https://i.pinimg.com/474x/95/f0/5d/95f05dad8ce20d17e4bcdb359633ca3a.jpg" alt="Logo" class="h-8 w-8 mr-4">
-      <h1 class="text-2xl text-orange-700 border rounded-lg  font-bold"> WELCOME TO SOCIAL</h1>
-    </div>
-    <h2 class="text-2xl font-bold mb-4 mt-3   ">LOGIN</h2>
-    <form>
-      <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="username">
-          Username
-        </label>
-        <input class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" id="username" type="text" placeholder="Username">
-      </div>
-      <div class="mb-4">
-        <label class="block text-gray-700 font-bold mb-2" for="password">
-          Password
-        </label>
-        <input class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-blue-500" id="password" type="password" placeholder="Password">
-      </div>
-      <div class="flex justify-end">
-    <button type="button" id="sign-in-button" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Sign In</button>
-    </form>
-    <div class="flex">
-      <div class="text-gray-700 text-center  px-4 py-2">
-        Don't have an account? 
-        <a class="font-bold hover:text-gray-900" href="#"><a href="page4.html" class="text-blue-500 mt-2 hover:underline">Sign up</a></a>
-      </div>
-      </div>
-      </div>
-    </form>
-  </div>
-</div>
-<script>
-  const modal = document.getElementById('login-modal');
-  const signInButton = document.getElementById('sign-in-button');
-
-  signInButton.addEventListener('click', () => {
-    modal.remove();
-  });
-</script>
-
-
-
+        
 <!--<head><meta charset="utf-8" /><meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" /><script nonce="0fBCHuLV">function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"useTrustedTypes":false,"isTrustedTypesReportOnly":false,"ajaxpipe_token":"AXhvgyp7gORocSBGcI4","gk_instrument_object_url":true,"stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ6Ab-VaLZw0NH7ZcSQ","isCQuick":false});</script><script nonce="0fBCHuLV">(function(a){function b(b){if(!window.openDatabase)return;b.I_AM_INCOGNITO_AND_I_REALLY_NEED_WEBSQL=function(a,b,c,d){return window.openDatabase(a,b,c,d)};window.openDatabase=function(){throw new Error()}}b(a)})(this);</script><style nonce="0fBCHuLV"></style><script nonce="0fBCHuLV">__DEV__=0;</script><noscript><meta http-equiv="refresh" content="0; URL=/pages/create/?ref_type=registration_form&amp;_fb_noscript=1" /></noscript><link rel="manifest" id="MANIFEST_LINK" href="/data/manifest/" crossorigin="use-credentials" /><title id="pageTitle">Facebook</title><link rel="shortcut icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico" /><link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/drHFafs6sDh.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="fm+Wpcb" crossorigin="anonymous" />
 <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yE/l/0,cross/RspwE1UYLwr.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="Pud6B2Z" crossorigin="anonymous" />
 <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yP/l/0,cross/Y1DM6LKnz1X.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="p5/JyPm" crossorigin="anonymous" />
@@ -199,54 +151,34 @@
 </div>
 
 
-
-    
-       <!-- cookies section-->
- <body>
-  <div class="bg-gray-800 text-white w-full mx-auto p-4 flex justify-between">
-    <p class="text-sm">We use cookies to improve your experience on our site. By using our site, you agree to our use of cookies. </p>
-    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600" id="accept-cookies">Accept</button>
-  </div>
-
-  <script>
-    const acceptCookiesButton = document.getElementById('accept-cookies');
-    const cookiesBanner = acceptCookiesButton.parentNode;
-
-    acceptCookiesButton.addEventListener('click', () => {
-      cookiesBanner.remove();
-    });
-  </script>
-</body>
-
-    
-  <!-- recent post -->
+<!-- recent post -->
       <div class="mt-12">
         <nav class="bg-gray-50 px-4 py-3 shadow-md">
-        <h2 class="text-2xl font-bold mb-4">More Posts</h2>
+        <h2 class="text-2xl font-bold mb-4">MORE POSTS</h2>
         </nav>
         <div class="grid grid-cols-3 gap-8">
           <div class="bg-white rounded-lg shadow-md">
-            <img src="https://i.pinimg.com/474x/10/70/82/1070827df1f495ffbe8ffe5d225b9624.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
+            <img src="https://i.pinimg.com/474x/93/95/fe/9395fe0ec28d367a6d070109195ff38b.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
             <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">WORMHOLE</h3>
-              <p class="text-gray-500">A wormhole is a fascinating concept in physics that opens up a whole new world of possibilities. It is a hypothetical tunnel or shortcut through space-time, connecting two separate points in the universe. The idea of a wormhole has captivated scientists and science-fiction enthusiasts alike, as it suggests a potential way to travel vast distances across the cosmos, allowing us to explore far-off planets and galaxies in ways that were once thought impossible. Wormholes may also offer a glimpse into the mysteries of the universe, such as black holes and the fundamental nature of gravity. The concept of wormholes may still be largely theoretical, but it represents a thrilling avenue for further exploration and discovery in the exciting field of physics.</p>
-              <a href="https://en.wikipedia.org/wiki/Wormhole#:~:text=A%20wormhole%20Einstein%2DRosen%20bridge,of%20the%20Einstein%20field%20equations." class="text-blue-500 mt-2 hover:underline">Read More</a>
+              <h3 class="text-xl font-bold mb-2">ARTIFICIAL INTELLIGENCE</h3>
+              <p class="text-gray-500">Artificial intelligence (AI) refers to the development of computer systems that can perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, perception, and natural language processing. AI involves the development of algorithms and models that enable machines to learn from and adapt to data and make decisions based on that information.</p>
+              <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="text-blue-500 mt-2 hover:underline">Read More</a>
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md">
-            <img src="https://i.pinimg.com/474x/4b/5b/8b/4b5b8b2cc2679a11a7661918c0ee1119.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
+            <img src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jsc2023e016432_alt4.jpg?itok=ouTmSmHb" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
             <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">TIME TRAVEL</h3>
-              <p class="text-gray-500">Time travel is a concept that has fascinated humanity for generations, capturing our imaginations with the idea of exploring the past or the future. It's the ultimate journey into the unknown, a thrilling adventure that takes us beyond the boundaries of our current reality. From the ancient myths of time travel to the modern science fiction stories that transport us to distant worlds, time travel has inspired us to dream of what could be, to explore the infinite possibilities of the universe. So why not step into the world of time travel, and experience the wonders that await you?</p>
-              <a href="https://en.wikipedia.org/wiki/Time_travel" class="text-blue-500 mt-2 hover:underline">Read More</a>
+              <h3 class="text-xl font-bold mb-2">MOON MISSION AGAIN</h3>
+              <p class="text-gray-500">The first Moon mission was the Apollo 11 mission, launched by NASA in 1969, which successfully landed astronauts Neil Armstrong and Edwin "Buzz" Aldrin on the Moon's surface. Since then, NASA has conducted several other Moon missions, including the Apollo 12, 14, 15, 16, and 17 missions, as well as the recent Artemis program which aims to land the first woman and next man on the Moon by 2024.</p>
+              <a href="https://www.nasa.gov/press-release/nasa-names-astronauts-to-next-moon-mission-first-crew-under-artemis" class="text-blue-500 mt-2 hover:underline">Read More</a>
             </div>
           </div>
           <div class="bg-white rounded-lg shadow-md">
-            <img src="https://i.pinimg.com/474x/85/28/f3/8528f313e2246b05909f06707e4f0aae.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
+            <img src="https://i.pinimg.com/474x/b0/61/64/b06164b2bde6aa4b3b7f0e2f3d744252.jpg" alt="post image" class="w-full h-56 object-cover rounded-t-lg">
             <div class="p-4">
-              <h3 class="text-xl font-bold mb-2">SPACE-X</h3>
-              <p class="text-gray-500">SpaceX is a pioneering company that is redefining space travel as we know it. With their cutting-edge technology and innovative approach, they are pushing the boundaries of what's possible and paving the way for a new era of space exploration. Their mission to make space accessible to everyone has captured the imagination of people all over the world, and their groundbreaking achievements have inspired a new generation of space enthusiasts. From launching reusable rockets to sending humans to space, SpaceX is on a mission to revolutionize the way we explore the cosmos and create a better future for all of us.</p>
-              <a href="https://www.spacex.com/mission/" class="text-blue-500 mt-2 hover:underline">Read More</a>
+              <h3 class="text-xl font-bold mb-2">MULTI PLANETARY </h3>
+              <p class="text-gray-500">The concept of a multi-planetary civilization has gained increasing attention in recent years as humanity has become more aware of the risks and limitations of remaining solely on Earth. With the potential threats of climate change, natural disasters, and even cosmic events such as asteroid impacts, having a presence on other planets could provide a critical safeguard for the survival of the human species.</p>
+              <a href="https://www.spacex.com/media/making_life_multiplanetary_transcript_2017.pdf" class="text-blue-500 mt-2 hover:underline">Read More</a>
         </div>
       </div>
      </div>
@@ -255,7 +187,7 @@
    <!-- HTML code for the advertisement poster -->
 
 <div class="relative">
-  <img src="https://i.pinimg.com/474x/12/16/9d/12169d9427f2583279c0ffc45f3f9ac4.jpg" alt="Advertisement Poster" class="w-full h-auto">
+  <img src="https://i.pinimg.com/474x/8c/94/5b/8c945bb18b20f5623cc1190ce3d1345c.jpg" alt="Advertisement Poster" class="w-full h-auto">
   <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl" onclick="removeAd()">Remove Ad</button>
 </div>
 
@@ -275,7 +207,7 @@ function removeAd() {
       <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase  ">Quote of the day</h2>
       </nav>
       <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="block text-indigo-600 xl:inline  animate-pulse">"Believe you can and you're halfway there."</span>
+        <span class="block text-indigo-600 xl:inline  animate-pulse">"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."</span>
       </p>
     </div>
     <div class="mt-10">
@@ -285,7 +217,7 @@ function removeAd() {
             <div class="w-full border-t-2 border-gray-200"></div>
           </div>
           <div class="relative flex justify-center">
-            <span class="px-3 bg-gray-100 text-lg font-semibold text-gray-900   animate-pulse">Theodore Roosevelt</span>
+            <span class="px-3 bg-gray-100 text-lg font-semibold text-gray-900   animate-pulse">Albert Einstein</span>
           </div>
         </div>
       </div>
@@ -297,43 +229,43 @@ function removeAd() {
    <div class="bg-gray-100 py-8">
     <div class="container mx-auto">
       <nav class="bg-green-50 px-4 py-3 shadow-md">
-      <h2 class="text-2xl font-semibold mb-4">LIFE LESSONS BY LEGENDS</h2>
+      <h2 class="text-2xl font-semibold mb-4">MORE LIFE LESSONS BY LEGENDS</h2>
       </nav>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div class="bg-white rounded-lg overflow-hidden shadow-md">
           <div class="relative">
             <a href="#" class="block">
-              <img src="https://i.pinimg.com/474x/bd/bb/63/bdbb633686f5dcd71d8219d5094a00fe.jpg" alt="Life Event 1" class="w-full h-auto">
+              <img src="https://i.pinimg.com/474x/06/41/50/064150c8a653d7dde2275f8104ed7bbe.jpg" alt="Life Event 1" class="w-full h-auto">
             </a>
-            <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl"><a href="https://youtu.be/xOZf52HHKWY">Play</a></button>
+            <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl"><a href="https://youtu.be/c7gcaq-9y-4">Play</a></button>
           </div>
           <div class="px-4 py-2">
-            <h3 class="text-lg font-semibold mb-2"><a href="#">MARK ZUCKERBERG</a></h3>
-            <p class="text-gray-700">Move fast and break things: This was one of Facebook's early mottos and it reflects Zuckerberg's belief in taking risks and being willing to fail in order to innovate and make progress.</p>
+            <h3 class="text-lg font-semibold mb-2"><a href="https://youtu.be/c7gcaq-9y-4">BILL GATES</a></h3>
+            <p class="text-gray-700">"Life is not fair - get used to it." This is a famous quote from Gates that reflects his belief that success is not guaranteed and that people need to be willing to work hard and persevere in order to achieve their goals.</p>
           </div>
         </div>
         <div class="bg-white rounded-lg overflow-hidden shadow-md">
           <div class="relative">
             <a href="#" class="block">
-              <img src="https://i.pinimg.com/474x/54/a8/a1/54a8a114e14a92e254d138a28f4b54df.jpg" alt="Life Event 2" class="w-full h-auto">
+              <img src="https://i.pinimg.com/474x/94/f8/41/94f8417c97e22cd87fdd9900b491e49a.jpg" alt="Life Event 2" class="w-full h-auto">
             </a>
-            <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl"><a href="https://youtu.be/y43IwWMjRY0">Play</a></button>
+            <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl"><a href="https://youtu.be/WRUqXZx5EUM">Play</a></button>
           </div>
           <div class="px-4 py-2">
-            <h3 class="text-lg font-semibold mb-2"><a href="#">ELON MUSK</a></h3>
-            <p class="text-gray-700">Pursue your passions: Musk has said that "I think it is possible for ordinary people to choose to be extraordinary." He encourages people to pursue their passions and work on projects that they believe in.</p>
+            <h3 class="text-lg font-semibold mb-2"><a href="https://youtu.be/WRUqXZx5EUM">JEFF BEZOS</a></h3>
+            <p class="text-gray-700">Bezos has emphasized the need for entrepreneurs to be willing to take risks and to embrace failure as part of the learning process. He has also spoken about the importance of customer focus and the need to constantly innovate and adapt in order to stay ahead of the competition.</p>
           </div>
         </div>
         <div class="bg-white rounded-lg overflow-hidden shadow-md">
           <div class="relative">
             <a href="#" class="block">
-              <img src="https://i.pinimg.com/474x/1e/50/6d/1e506da2432ba8c551a45dd707de7087.jpg" alt="Life Event 3" class="w-full h-auto">
+              <img src="https://i.pinimg.com/474x/4f/bb/80/4fbb80598d2b37e718878e185b19c33a.jpg" alt="Life Event 3" class="w-full h-auto">
             </a>
-            <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl"><a href="https://youtu.be/m050iy5_2ng">Play</a></button>
+            <button class="absolute top-0 right-0 px-2 py-1 bg-gray-800 text-white text-sm font-semibold rounded-bl"><a href="https://youtu.be/SCq1WlJaCyg">Play</a></button>
           </div>
           <div class="px-4 py-2">
-            <h3 class="text-lg font-semibold mb-2"><a href="#">SUNDER PICHAI</a></h3>
-            <p class="text-gray-700">Be open to learning: Pichai has emphasized the importance of being open to learning and taking risks. He has said, "You have to be comfortable with ambiguity and uncertainty, and not be afraid to take risks."</p>
+            <h3 class="text-lg font-semibold mb-2"><a href="https://youtu.be/SCq1WlJaCyg">LARRY PAGE</a></h3>
+            <p class="text-gray-700">Always work hard on something uncomfortably exciting.If you’re changing the world, you’re working on important things. You’re excited to get up in the morning.</p>
           </div>
         </div>
       </div>
