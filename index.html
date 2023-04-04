@@ -361,7 +361,7 @@ function typewriter() {
       if(typewriter.textContent.length === 0) {
         clearInterval(interval);
         count++;
-        if(count < 1) {
+        if(count < 0) {
           setTimeout(type, 1000);
         }
       } else {
